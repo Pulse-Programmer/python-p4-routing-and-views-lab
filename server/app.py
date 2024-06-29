@@ -18,7 +18,7 @@ def print_string(parameter):
 @app.route('/count/<int:parameter>')
 def count(parameter):
     j = ""
-    for i in range(int(parameter)):
+    for i in range(parameter):
         j += f"{i}\n"
         
     return j
